@@ -3,9 +3,10 @@
   "type": "module",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {
+ "scripts": {
   "dev": "node --watch src/server.js",
-  "start": "node src/server.js"
+  "start": "node src/server.js",
+  "test": "vitest run"
 },
   "keywords": [],
   "author": "",
@@ -13,5 +14,9 @@
   "description": "",
   "dependencies": {
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.3.1",
+    "vitest": "^5.0.5"
   }
 }
